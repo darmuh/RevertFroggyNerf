@@ -16,7 +16,7 @@ namespace RevertFroggyNerf
         {
             Log = Logger;
 
-            Log.LogInfo($"Plugin {Name} is loaded with version {Version}!");
+            Log.LogInfo($"Plugin {Name} is loaded with version {Version}!!");
             MaxJumpsOverride = Config.Bind("Settings", "Additional Jumps Cap", 3, new ConfigDescription("Set the maxmium additional jumps with this configuration value.\nCapped at 99 for sanity reasons", new AcceptableValueRange<int>(1, 99)));
 
             GameManager.OnPlayerSpawned += ModifyMaxJumps;
@@ -24,7 +24,7 @@ namespace RevertFroggyNerf
 
         private static void ModifyMaxJumps(Pawn pawn)
         {
-            if (!pawn.isLocalPlayer || !NetworkServer.active)
+            if (!NetworkServer.active)
                 return;
             
             pawn.maxAdditiveExtraAirJumps = MaxJumpsOverride.Value;
