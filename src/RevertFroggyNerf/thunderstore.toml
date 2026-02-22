@@ -1,0 +1,44 @@
+[config]
+schemaVersion = "0.0.1"
+
+[general]
+repository = "https://thunderstore.io"
+
+[package]
+namespace = "darmuh"
+name = "RevertFroggyNerf"
+description = "Quality of Life mod that reverts the jump potion nerf that limits how many extra jumps you can get. Defaults to 4 maximum and can be configured up to 99 additional jumps"
+websiteUrl = ""
+containsNsfwContent = false
+
+[package.dependencies]
+BepInEx-BepInExPack = "5.4.2304"
+
+[build]
+icon = "../../icon.png"
+readme = "../../README.md"
+outdir = "../../artifacts/thunderstore/"
+
+[[build.copy]]
+source = "../../artifacts/bin/RevertFroggyNerf/release/com.github.darmuh.RevertFroggyNerf.dll"
+target = "plugins/"
+
+[[build.copy]]
+source = "../../CHANGELOG.md"
+target = "/"
+
+[[build.copy]]
+source = "../../LICENSE"
+target = "/"
+
+# The following config options only apply when using TCLI to publish to Thunderstore directly:
+
+[publish]
+# See communities at:
+# https://thunderstore.io/api/experimental/community/
+communities = [ "yapyap", ]
+
+[publish.categories]
+# See categories at:
+# https://thunderstore.io/api/experimental/community/yapyap/category/
+yapyap = [ "mods", "qol", "host", "misc"]
