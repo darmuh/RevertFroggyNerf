@@ -8,7 +8,7 @@ repository = "https://thunderstore.io"
 namespace = "darmuh"
 name = "RevertFroggyNerf"
 description = "Quality of Life mod that reverts the jump potion nerf that limits how many extra jumps you can get. Defaults to 4 maximum and can be configured up to 99 additional jumps"
-websiteUrl = ""
+websiteUrl = "https://github.com/darmuh/RevertFroggyNerf"
 containsNsfwContent = false
 
 [package.dependencies]
