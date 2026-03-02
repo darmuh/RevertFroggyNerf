@@ -7,7 +7,7 @@ repository = "https://thunderstore.io"
 [package]
 namespace = "darmuh"
 name = "RevertFroggyNerf"
-description = "Quality of Life mod that reverts the jump potion nerf that limits how many extra jumps you can get. Defaults to 3 maximum and can be configured up to 99 additional jumps"
+description = "Quality of Life mod that reverts the jump potion nerf that limits how many extra jumps you can get. Defaults to the vanilla maximum (3) and can be configured up to 99 additional jumps"
 websiteUrl = "https://github.com/darmuh/RevertFroggyNerf"
 containsNsfwContent = false
 
@@ -41,4 +41,4 @@ communities = [ "yapyap", ]
 [publish.categories]
 # See categories at:
 # https://thunderstore.io/api/experimental/community/yapyap/category/
-yapyap = [ "mods", "qol", "host", "misc"]
+yapyap = [ "mods", "qol", "all", "misc"]
